@@ -18,7 +18,8 @@
 | 第四课 | [LangChain入门：20行代码重构RAG](文章/第四课_LangChain入门.md) | LangChain框架、FAISS、智能切片 | [代码](第四课_LangChain入门/) |
 | 第五课 | [Agent智能体：让AI自己决定先干嘛](文章/第五课_Agent智能体实战.md) | ReAct模式、多工具协作、手写+LangChain双版本 | [代码](第五课_Agent智能体实战/) |
 | 第六课 | [上线！Gradio Web应用：把AI助手变成网页](文章/第六课_Gradio Web应用.md) | Gradio框架、ChatInterface、三合一Web应用 | [代码](第六课_Gradio Web应用/) |
-| ... | 更多课程筹备中 | 多模态实战 / 部署上线 | ⏳ |
+| 第七课 | [5分钟分析10000行数据：AI数据分析实战](文章/第七课_AI数据分析实战.md) | pandas+AI读数据、自动写报告、matplotlib图表 | [代码](第七课_AI数据分析实战/) |
+| ... | 更多课程筹备中 | Prompt Engineering / 部署上线 | ⏳ |
 
 ---
 
@@ -66,7 +67,13 @@ python 第五课_Agent智能体实战/agent_demo.py --langchain
 pip install gradio openai langchain-community faiss-cpu sentence-transformers
 python 第六课_Gradio Web应用/ai_web_app.py
 
-# 第六课（生成公网分享链接）
+# 第七课（AI数据分析）
+pip install openai pandas matplotlib
+python 第七课_AI数据分析实战/ai_data_analyst.py
+
+# 第七课交互模式（分析后继续追问）
+python 第七课_AI数据分析实战/ai_data_analyst.py --interactive
+```# 第六课（生成公网分享链接）
 python 第六课_Gradio Web应用/ai_web_app.py --share
 ```
 
