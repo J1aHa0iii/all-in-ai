@@ -15,7 +15,8 @@
 | 第一课 | [10块钱入门大模型：用DeepSeek API搭建SQL助手](文章/第一课_10块钱入门大模型.md) | API调用、AI写SQL、多轮对话 | [代码](第一课_10块钱入门大模型/) |
 | 第二课 | [Function Calling实战：让AI帮你查数据库](文章/第二课_FunctionCalling实战.md) | 工具注册、对话循环、SQLite实战 | [代码](第二课_FunctionCalling实战/) |
 | 第三课 | [把200份文档喂给AI：RAG实战](文章/第三课_RAG实战.md) | TF-IDF检索、Embedding、企业知识库 | [代码](第三课_RAG实战/) |
-| ... | 更多课程筹备中 | LangChain / Agent 智能体 | ⏳ |
+| 第四课 | [LangChain入门：20行代码重构RAG](文章/第四课_LangChain入门.md) | LangChain框架、FAISS、智能切片 | [代码](第四课_LangChain入门/) |
+| ... | 更多课程筹备中 | Agent 智能体 / 完整应用实战 | ⏳ |
 
 ---
 
@@ -46,6 +47,10 @@ python 第二课_FunctionCalling实战/ai_db_assistant.py
 # 第三课
 pip install openai numpy scikit-learn
 python 第三课_RAG实战/rag_knowledge_base.py
+
+# 第四课
+pip install langchain langchain-community langchain-openai faiss-cpu sentence-transformers openai
+python 第四课_LangChain入门/langchain_rag.py
 ```
 
 ---
