@@ -16,7 +16,8 @@
 | 第二课 | [Function Calling实战：让AI帮你查数据库](文章/第二课_FunctionCalling实战.md) | 工具注册、对话循环、SQLite实战 | [代码](第二课_FunctionCalling实战/) |
 | 第三课 | [把200份文档喂给AI：RAG实战](文章/第三课_RAG实战.md) | TF-IDF检索、Embedding、企业知识库 | [代码](第三课_RAG实战/) |
 | 第四课 | [LangChain入门：20行代码重构RAG](文章/第四课_LangChain入门.md) | LangChain框架、FAISS、智能切片 | [代码](第四课_LangChain入门/) |
-| ... | 更多课程筹备中 | Agent 智能体 / 完整应用实战 | ⏳ |
+| 第五课 | [Agent智能体：让AI自己决定先干嘛](文章/第五课_Agent智能体实战.md) | ReAct模式、多工具协作、手写+LangChain双版本 | [代码](第五课_Agent智能体实战/) |
+| ... | 更多课程筹备中 | Gradio Web应用 / 完整项目实战 | ⏳ |
 
 ---
 
@@ -51,6 +52,14 @@ python 第三课_RAG实战/rag_knowledge_base.py
 # 第四课
 pip install langchain langchain-community langchain-openai faiss-cpu sentence-transformers openai
 python 第四课_LangChain入门/langchain_rag.py
+
+# 第五课（手写版，只需 openai）
+pip install openai
+python 第五课_Agent智能体实战/agent_demo.py
+
+# 第五课（LangChain版）
+pip install openai langchain langchain-community langchain-openai faiss-cpu sentence-transformers
+python 第五课_Agent智能体实战/agent_demo.py --langchain
 ```
 
 ---
