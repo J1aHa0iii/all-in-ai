@@ -263,12 +263,13 @@ WHERE order_date >= DATE '2024-01-01'
 GROUP BY product_name
 ORDER BY total_sales DESC
 FETCH FIRST 10 ROWS ONLY;
-```
 -- 按产品汇总2024年销售，降序取前10
 """
 ```
 
+
 **改了三个地方**：
+
 - 角色明确到「Oracle DBA」，避免生成 MySQL 语法
 - 加了 `FETCH FIRST 10 ROWS ONLY` 的示例（Oracle 12c+ 语法）
 - 加了「描述不清先反问」的兜底逻辑
@@ -416,10 +417,7 @@ SELECT TO_CHAR(order_date, 'YYYY-MM') as month, COUNT(*) as order_count
 FROM orders
 WHERE order_date >= DATE '2024-01-01'
 GROUP BY TO_CHAR(order_date, 'YYYY-MM')
-ORDER BY month;
-```
-
-现在输出你的SQL，只输出SQL和一行简短注释："""
+ORDER BY month;现在输出你的SQL，只输出SQL和一行简短注释："""
 }
 
 print(f"问题：{question}\n")
@@ -434,9 +432,11 @@ for name, prompt in prompts.items():
     print(f"{'='*50}")
     print(resp.choices[0].message.content)
     print()
+```
+
+
 
 # 在第八课代码中运行：python prompt_compare.py
-```
 
 跑一遍你就会发现——**不是 AI 不行，是你之前给的 Prompt 太随便了。**
 
@@ -468,13 +468,11 @@ Prompt Engineering **不是玄学，是结构化的沟通方法论。**
 
 **这一课和前七课的关系**：
 
-```
 第一~三课：你学会了「让 AI 做事」
 第四~五课：你学会了「让 AI 聪明地做事」
 第六课：    你学会了「把 AI 装成产品」
 第七课：    你学会了「让 AI 帮你理解数据」
 第八课：    你学会了「让 AI 把事做对」 ← 你在这
-```
 
 ### 下期预告
 
