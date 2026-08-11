@@ -10,12 +10,17 @@
 
 ## 📚 课程目录
 
-| 课次 | 标题 | 核心内容 | 代码 |
-|------|------|---------|------|
-| 第一课 | [10块钱入门大模型：用DeepSeek API搭建SQL助手](文章/第一课_10块钱入门大模型.md) | API调用、AI写SQL、多轮对话 | [代码](第一课_10块钱入门大模型/) |
-| 第二课 | [Function Calling实战：让AI帮你查数据库](文章/第二课_FunctionCalling实战.md) | 工具注册、对话循环、SQLite实战 | [代码](第二课_FunctionCalling实战/) |
-| 第三课 | RAG实战：把文档喂给AI（即将更新） | 文本向量化、知识库检索 | ⏳ |
-| ... | 更多课程筹备中 | LangChain / Agent 智能体 | ⏳ |
+| 课次   | 标题                                                         | 核心内容                                      | 代码                                     |
+| ------ | ------------------------------------------------------------ | --------------------------------------------- | ---------------------------------------- |
+| 第一课 | [10块钱入门大模型：用DeepSeek API搭建SQL助手](文章/第一课_10块钱入门大模型.md) | API调用、AI写SQL、多轮对话                    | [代码](第一课_10块钱入门大模型/)         |
+| 第二课 | [Function Calling实战：让AI帮你查数据库](文章/第二课_FunctionCalling实战.md) | 工具注册、对话循环、SQLite实战                | [代码](第二课_FunctionCalling实战/)      |
+| 第三课 | [把200份文档喂给AI：RAG实战](文章/第三课_RAG实战.md)         | TF-IDF检索、Embedding、企业知识库             | [代码](第三课_RAG实战/)                  |
+| 第四课 | [LangChain入门：20行代码重构RAG](文章/第四课_LangChain入门.md) | LangChain框架、FAISS、智能切片                | [代码](第四课_LangChain入门/)            |
+| 第五课 | [Agent智能体：让AI自己决定先干嘛](文章/第五课_Agent智能体实战.md) | ReAct模式、多工具协作、手写+LangChain双版本   | [代码](第五课_Agent智能体实战/)          |
+| 第六课 | [上线！Gradio Web应用：把AI助手变成网页](文章/第六课_Gradio Web应用.md) | Gradio框架、ChatInterface、三合一Web应用      | [代码](第六课_Gradio Web应用/)           |
+| 第七课 | [5分钟分析10000行数据：AI数据分析实战](文章/第七课_AI数据分析实战.md) | pandas+AI读数据、自动写报告、matplotlib图表   | [代码](第七课_AI数据分析实战/)           |
+| 第八课 | [Prompt Engineering：一句话让AI输出质量翻倍](文章/第八课_Prompt Engineering深度课.md) | 三层框架、Few-shot、CoT、结构化输出、对比测试 | [代码](第八课_Prompt Engineering深度课/) |
+| ...    | 更多课程筹备中                                               | Docker部署 / 完整项目上线                     | ⏳                                        |
 
 ---
 
@@ -42,6 +47,43 @@ python 第一课_10块钱入门大模型/sql_assistant.py
 # 第二课
 python 第二课_FunctionCalling实战/init_db.py
 python 第二课_FunctionCalling实战/ai_db_assistant.py
+
+# 第三课
+pip install openai numpy scikit-learn
+python 第三课_RAG实战/rag_knowledge_base.py
+
+# 第四课
+pip install langchain langchain-community langchain-openai faiss-cpu sentence-transformers openai
+python 第四课_LangChain入门/langchain_rag.py
+
+# 第五课（手写版，只需 openai）
+pip install openai
+python 第五课_Agent智能体实战/agent_demo.py
+
+# 第五课（LangChain版）
+pip install openai langchain langchain-community langchain-openai faiss-cpu sentence-transformers
+python 第五课_Agent智能体实战/agent_demo.py --langchain
+
+# 第六课（Web应用，三种模式一键切换）
+pip install gradio openai langchain-community faiss-cpu sentence-transformers
+python 第六课_Gradio Web应用/ai_web_app.py
+
+# 第七课（AI数据分析）
+pip install openai pandas matplotlib
+python 第七课_AI数据分析实战/ai_data_analyst.py
+
+# 第七课交互模式（分析后继续追问）
+python 第七课_AI数据分析实战/ai_data_analyst.py --interactive
+
+# 第六课（生成公网分享链接）
+python 第六课_Gradio Web应用/ai_web_app.py --share
+
+# 第八课（Prompt对比测试，三种模式）
+pip install openai
+python 第八课_Prompt Engineering深度课/prompt_compare.py
+
+# 第八课交互模式（自己写Prompt对比）
+python 第八课_Prompt Engineering深度课/prompt_compare.py --interactive
 ```
 
 ---
