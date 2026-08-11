@@ -17,9 +17,9 @@
 | 第三课 | [把200份文档喂给AI：RAG实战](文章/第三课_RAG实战.md)         | TF-IDF检索、Embedding、企业知识库             | [代码](第三课_RAG实战/)                  |
 | 第四课 | [LangChain入门：20行代码重构RAG](文章/第四课_LangChain入门.md) | LangChain框架、FAISS、智能切片                | [代码](第四课_LangChain入门/)            |
 | 第五课 | [Agent智能体：让AI自己决定先干嘛](文章/第五课_Agent智能体实战.md) | ReAct模式、多工具协作、手写+LangChain双版本   | [代码](第五课_Agent智能体实战/)          |
-| 第六课 | [上线！Gradio Web应用：把AI助手变成网页](文章/第六课_Gradio Web应用.md) | Gradio框架、ChatInterface、三合一Web应用      | [代码](第六课_Gradio Web应用/)           |
+| 第六课 | [上线！Gradio Web应用：把AI助手变成网页](文章/第六课_Gradio%20Web应用.md) | Gradio框架、ChatInterface、三合一Web应用      | [代码](第六课_Gradio%20Web应用/)           |
 | 第七课 | [5分钟分析10000行数据：AI数据分析实战](文章/第七课_AI数据分析实战.md) | pandas+AI读数据、自动写报告、matplotlib图表   | [代码](第七课_AI数据分析实战/)           |
-| 第八课 | [Prompt Engineering：一句话让AI输出质量翻倍](文章/第八课_Prompt Engineering深度课.md) | 三层框架、Few-shot、CoT、结构化输出、对比测试 | [代码](第八课_Prompt Engineering深度课/) |
+| 第八课 | [Prompt Engineering：一句话让AI输出质量翻倍](文章/第八课_Prompt%20Engineering深度课.md) | 三层框架、Few-shot、CoT、结构化输出、对比测试 | [代码](第八课_Prompt%20Engineering深度课/) |
 | ...    | 更多课程筹备中                                               | Docker部署 / 完整项目上线                     | ⏳                                        |
 
 ---
